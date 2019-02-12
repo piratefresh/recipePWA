@@ -198,7 +198,7 @@ var Meta = function Meta() {
       lineNumber: 9
     },
     __self: this
-  }, "Sick Fits!"));
+  }, "Recipeter"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Meta);
@@ -257,7 +257,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 var theme = {
-  red: "#FF0000",
+  red: "#E62D2D",
   black: "#393939",
   grey: "#3A3A3A",
   lightgrey: "#E1E1E1",
@@ -268,7 +268,7 @@ var theme = {
 var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "Page__StyledPage",
   componentId: "mx294n-0"
-})(["background:white;color:", ";"], function (props) {
+})(["background:#f3f0eb;color:", ";"], function (props) {
   return props.theme.black;
 });
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject(), theme.black);

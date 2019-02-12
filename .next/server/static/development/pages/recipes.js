@@ -128,10 +128,28 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+var RecipeContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "recipes__RecipeContainer",
+  componentId: "sc-1f8pa12-0"
+})(["margin:0 10%;"]);
 var HeaderRecipe = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "recipes__HeaderRecipe",
-  componentId: "sc-1f8pa12-0"
-})(["img{width:100%;height:30vh;object-fit:cover;}.headerDetails{display:flex;flex-direction:row;justify-content:center;align-items:center;.detailBox{display:flex;justify-content:center;align-items:center;height:100px;width:100px;box-shadow:0 2px 4px rgba(0,0,0,0.1),0 2px 4px rgba(0,0,0,0.15);}}"]);
+  componentId: "sc-1f8pa12-1"
+})(["h1{display:flex;text-align:center;color:", ";font-size:2rem;}img{width:100%;height:40vh;object-fit:cover;}.headerDetails{display:flex;flex-direction:row;justify-content:center;align-items:center;.detailBox{display:flex;flex-direction:column;justify-content:center;align-items:center;background:#fff;height:100px;width:100px;box-shadow:0 2px 4px rgba(0,0,0,0.1),0 2px 4px rgba(0,0,0,0.15);span{color:#9b9b9b;}}}"], function (props) {
+  return props.theme.red;
+});
+var IngredientsContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "recipes__IngredientsContainer",
+  componentId: "sc-1f8pa12-2"
+})(["h2{color:", ";}"], function (props) {
+  return props.theme.red;
+});
+var StepsContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "recipes__StepsContainer",
+  componentId: "sc-1f8pa12-3"
+})([".step{background:#fff;margin-top:5%;padding:5%;border-radius:5px;box-shadow:0 2px 4px rgba(0,0,0,0.1),0 2px 4px rgba(0,0,0,0.15);}"]);
+var StepsArr = ["Make the fried shallots: In a small skillet, heat Â¼-inch of oil until shimmering. Working in small batches, add a handful of shallots, and cook, turning frequently, until golden, about 1 minute. Using a slotted spoon, transfer fried shallots to a paper towel lined plate.", "Make the soup: In a medium pot, heat the oil over medium-high. Add the chicken and brown on both sides, about 4 minutes per side. Remove the chicken to a plate.", "Reduce the heat to medium and add the ginger, turmeric, and cumin. Cook, stirring constantly, until fragrant, about 1 minute.", "Pour the broth into the pot and return the chicken. Bring to a boil and then reduce to medium-low. Cover and gently simmer until the chicken breasts are just cooked through, about 10 to 12 minutes. Turn off heat. Using tongs or a slotted spoon remove the chicken breast to a plate and let cool slightly. Discard skin and bones and shred chicken meat. Keep warm.", "Meanwhile, bring a large pot of salted water to a boil. Add the rice noodles or thin spaghetti and cook until al dente per package instructions. Drain.", "Add noodles to broth and serve brothy noodles topped with pulled chicken, herbs, fried shallots, and black pepper."];
+var IngredientsArr = ["Extra-virgin olive oil", "4 shallots, thinly sliced into rings", "1/4 cup unbleached all-purpose flour", "2 tablespoons extra virgin olive oil", "2 bone-in, skin-on chicken thighs", "Kosher salt and freshly ground pepper", "One 2-inch piece of ginger, peeled and finely chopped, (1 tablespoon)", "1/4 tsp. ground cumin", "1 tsp. ground tumeric", "4 cups Swanson Chicken Broth", "8 ounces vermicelli rice noodles or thin spaghetti", "1 cup leafy herbs, such as cilantro, dill and basil"];
 
 var Recipes =
 /*#__PURE__*/
@@ -150,7 +168,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeaderRecipe, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 81
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -158,44 +176,117 @@ function (_Component) {
         alt: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 82
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 86
         },
         __self: this
       }, "Instant Pot Braised Lamb with White Beans and Spinach "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "headerDetails",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 87
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "detailBox",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 88
         },
         __self: this
-      }, "20mins"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "20mins", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 90
+        },
+        __self: this
+      }, "Yields")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "detailBox",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 92
         },
         __self: this
-      }, "20mins"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "20mins", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 93
+        },
+        __self: this
+      }, "Yields")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "detailBox",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 95
         },
         __self: this
-      }, "20mins"))));
+      }, "20mins", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 96
+        },
+        __self: this
+      }, "Yields")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RecipeContainer, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 100
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IngredientsContainer, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 101
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 102
+        },
+        __self: this
+      }, "Ingredients: "), IngredientsArr.map(function (ingredient, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 105
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 106
+          },
+          __self: this
+        }, ingredient));
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StepsContainer, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 111
+        },
+        __self: this
+      }, StepsArr.map(function (step, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "step",
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 114
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 115
+          },
+          __self: this
+        }, "Step: ", index + 1), step);
+      }))));
     }
   }]);
 

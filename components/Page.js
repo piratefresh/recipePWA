@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Meta from "../components/Meta";
 
 const theme = {
-  red: "#FF0000",
+  red: "#E62D2D",
   black: "#393939",
   grey: "#3A3A3A",
   lightgrey: "#E1E1E1",
@@ -14,7 +14,7 @@ const theme = {
 };
 
 const StyledPage = styled.div`
-  background: white;
+  background: #f3f0eb;
   color: ${props => props.theme.black};
 `;
 
